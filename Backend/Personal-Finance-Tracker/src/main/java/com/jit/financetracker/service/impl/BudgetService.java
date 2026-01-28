@@ -1,4 +1,4 @@
-package com.jit.financetracker.service;
+package com.jit.financetracker.service.impl;
 
 import com.jit.financetracker.dto.request.BudgetRequestDto;
 import com.jit.financetracker.dto.response.BudgetResponseDto;
@@ -10,6 +10,7 @@ import com.jit.financetracker.exception.BadRequestException;
 import com.jit.financetracker.repository.BudgetRepository;
 import com.jit.financetracker.repository.ExpenseRepository;
 import com.jit.financetracker.repository.UserRepository;
+import com.jit.financetracker.service.interfaces.IBudgetService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,7 @@ import java.time.YearMonth;
 import java.util.List;
 
 @Service
-public class BudgetService {
+public class BudgetService implements IBudgetService {
 
     private final BudgetRepository budgetRepository;
     private final ExpenseRepository expenseRepository;

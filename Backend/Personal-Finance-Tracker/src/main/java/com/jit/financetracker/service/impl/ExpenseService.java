@@ -1,4 +1,4 @@
-package com.jit.financetracker.service;
+package com.jit.financetracker.service.impl;
 
 import com.jit.financetracker.dto.request.ExpenseRequestDto;
 import com.jit.financetracker.dto.response.ExpenseResponseDto;
@@ -12,6 +12,7 @@ import com.jit.financetracker.exception.ResourceNotFoundException;
 import com.jit.financetracker.repository.ExpenseRepository;
 import com.jit.financetracker.repository.TransactionRepository;
 import com.jit.financetracker.repository.UserRepository;
+import com.jit.financetracker.service.interfaces.IExpenseSevice;
 import com.jit.financetracker.util.PaginationUtil;
 import com.jit.financetracker.util.SecurityUtil;
 import org.springframework.data.domain.PageRequest;
@@ -23,7 +24,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-public class ExpenseService {
+public class ExpenseService implements IExpenseSevice {
 
     private final ExpenseRepository expenseRepository;
     private final UserRepository userRepository;

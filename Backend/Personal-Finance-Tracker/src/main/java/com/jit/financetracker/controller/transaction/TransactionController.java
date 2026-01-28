@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.jit.financetracker.dto.response.TransactionResponseDto;
 import com.jit.financetracker.enums.TransactionType;
-import com.jit.financetracker.service.TransactionService;
+import com.jit.financetracker.service.impl.TransactionService;
 
 import io.swagger.v3.oas.annotations.Hidden;
 

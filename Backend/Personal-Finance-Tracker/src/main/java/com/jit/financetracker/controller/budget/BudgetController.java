@@ -2,7 +2,7 @@ package com.jit.financetracker.controller.budget;
 
 import com.jit.financetracker.dto.request.BudgetRequestDto;
 import com.jit.financetracker.dto.response.BudgetResponseDto;
-import com.jit.financetracker.service.BudgetService;
+import com.jit.financetracker.service.impl.BudgetService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,8 +1,9 @@
-package com.jit.financetracker.service;
+package com.jit.financetracker.service.impl;
 
 import java.time.LocalDateTime;
 import java.util.Random;
 
+import com.jit.financetracker.service.interfaces.IAuthService;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -16,7 +17,7 @@ import com.jit.financetracker.repository.UserRepository;
 import com.jit.financetracker.security.JwtTokenProvider;
 
 @Service
-public class AuthService {
+public class AuthService implements IAuthService {
 
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;

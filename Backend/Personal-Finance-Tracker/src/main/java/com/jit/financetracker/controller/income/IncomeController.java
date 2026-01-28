@@ -2,7 +2,7 @@ package com.jit.financetracker.controller.income;
 
 import com.jit.financetracker.dto.request.IncomeRequestDto;
 import com.jit.financetracker.dto.response.IncomeResponseDto;
-import com.jit.financetracker.service.IncomeService;
+import com.jit.financetracker.service.impl.IncomeService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

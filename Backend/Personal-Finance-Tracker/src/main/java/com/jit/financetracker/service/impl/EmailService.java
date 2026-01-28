@@ -1,12 +1,13 @@
-package com.jit.financetracker.service;
+package com.jit.financetracker.service.impl;
 
+import com.jit.financetracker.service.interfaces.IEmailService;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import org.springframework.scheduling.annotation.Async;
 
 @Service
-public class EmailService {
+public class EmailService implements IEmailService {
 
     private final JavaMailSender mailSender;
 

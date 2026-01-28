@@ -1,4 +1,4 @@
-package com.jit.financetracker.service;
+package com.jit.financetracker.service.impl;
 
 import com.jit.financetracker.dto.request.IncomeRequestDto;
 import com.jit.financetracker.dto.response.IncomeResponseDto;
@@ -11,6 +11,7 @@ import com.jit.financetracker.exception.ResourceNotFoundException;
 import com.jit.financetracker.repository.IncomeRepository;
 import com.jit.financetracker.repository.TransactionRepository;
 import com.jit.financetracker.repository.UserRepository;
+import com.jit.financetracker.service.interfaces.IIncomeService;
 import com.jit.financetracker.util.PaginationUtil;
 import com.jit.financetracker.util.SecurityUtil;
 import org.springframework.data.domain.Page;
@@ -23,7 +24,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-public class IncomeService {
+public class IncomeService implements IIncomeService {
 
     private final IncomeRepository incomeRepository;
     private final UserRepository userRepository;

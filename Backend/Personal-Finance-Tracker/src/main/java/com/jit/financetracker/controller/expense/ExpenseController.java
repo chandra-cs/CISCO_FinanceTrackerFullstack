@@ -3,7 +3,7 @@ package com.jit.financetracker.controller.expense;
 import com.jit.financetracker.dto.request.ExpenseRequestDto;
 import com.jit.financetracker.dto.response.ExpenseResponseDto;
 import com.jit.financetracker.enums.ExpenseCategory;
-import com.jit.financetracker.service.ExpenseService;
+import com.jit.financetracker.service.impl.ExpenseService;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

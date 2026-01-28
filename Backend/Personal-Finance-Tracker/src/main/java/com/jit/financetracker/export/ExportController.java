@@ -1,9 +1,9 @@
 package com.jit.financetracker.export;
 
 import com.jit.financetracker.dashboard.service.DashboardService;
-import com.jit.financetracker.service.ExpenseService;
-import com.jit.financetracker.service.IncomeService;
-import com.jit.financetracker.service.TransactionService;
+import com.jit.financetracker.service.impl.ExpenseService;
+import com.jit.financetracker.service.impl.IncomeService;
+import com.jit.financetracker.service.impl.TransactionService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

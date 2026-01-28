@@ -13,7 +13,7 @@ import com.jit.financetracker.dto.request.LoginRequestDto;
 import com.jit.financetracker.dto.request.OtpVerifyRequestDto;
 import com.jit.financetracker.dto.request.RegisterRequestDto;
 import com.jit.financetracker.dto.response.JwtAuthResponseDto;
-import com.jit.financetracker.service.AuthService;
+import com.jit.financetracker.service.impl.AuthService;
 
 @RestController
 @RequestMapping("/api/auth")

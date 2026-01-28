@@ -1,9 +1,10 @@
-package com.jit.financetracker.service;
+package com.jit.financetracker.service.impl;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.jit.financetracker.service.interfaces.ITransactionService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -20,7 +21,7 @@ import com.jit.financetracker.repository.TransactionRepository;
 import com.jit.financetracker.repository.UserRepository;
 
 @Service
-public class TransactionService {
+public class TransactionService implements ITransactionService {
 
     private final TransactionRepository transactionRepository;
     private final UserRepository userRepository;
