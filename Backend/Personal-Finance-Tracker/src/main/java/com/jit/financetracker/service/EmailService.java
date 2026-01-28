@@ -3,6 +3,7 @@ package com.jit.financetracker.service;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+import org.springframework.scheduling.annotation.Async;
 
 @Service
 public class EmailService {
@@ -13,6 +14,7 @@ public class EmailService {
         this.mailSender = mailSender;
     }
 
+    @Async
     public void sendOtpEmail(String toEmail, String otp) {
 
         SimpleMailMessage message = new SimpleMailMessage();
