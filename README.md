@@ -1,4 +1,5 @@
 # 💰 Personal Finance Tracker – Full Stack Application
+# Author : Chandra Sekhar Jena 
 
 A **full-stack Personal Finance Tracker** application built using **Spring Boot, React, and MySQL** that helps users manage income, expenses, budgets, and financial trends with secure authentication and insightful analytics.
 
@@ -163,5 +164,5 @@ Contributions, suggestions, and improvements are welcome.
 This project is for learning and demonstration purposes.
 
 👨‍💻 Author
-Prasanjit Behera
-GitHub: https://github.com/Prasanjit2003
+Chandra Sekhar Jena
+GitHub: https://github.com/chandra-cs
